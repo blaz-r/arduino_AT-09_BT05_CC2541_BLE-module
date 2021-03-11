@@ -1,4 +1,4 @@
-***********************************)********************************
+********************************************************************
 * Command             Description			           *
 * ---------------------------------------------------------------- *
 * AT                  Check if the command terminal work normally  *
@@ -26,5 +26,5 @@
 * AT+START            System start working.			   *
 * AT+UUID             Get/Set system SERVER_UUID .            	   *
 * AT+CHAR             Get/Set system CHAR_UUID .            	   *
-* -----------------------------------------------------------.-,---*
+* -----------------------------------------------------------------*
 * Note: (M) = The command support master mode only. 	           *
