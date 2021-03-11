@@ -16,13 +16,14 @@ SoftwareSerial Serial1(3, 4); // RX->3  TX->4
 The code is simple, it just reads serial input from module and writes to it. This way you can use commands to configure the module.
 
 Upload code to your arduino and then use serial monitor set to 115200 baudrate. It could work with other baud rates but this one seemed to work for this module. Now the next step is very important for this module. You need to set serial monitor to send both NL & CR when you send a command.
-This module requires all commands to end with "NL + CR" and Serial.write() command in code removes "\\r\\n" symbols. It's also easier to configure it interactively.
+This module requires all commands to end with "NL + CR" and Serial.write() command in code removes "\\r\\n" symbols so that's why we need serial monitor. It's also easier to configure it interactively.
 
 
 Once you have all that set up, you simply write the commands and use send or "enter" to send them.
-Command "AT" should give "OK" reply. Then you can use "AT+HELP" to get list of all commands. There's also a list of commands, for previously linked module, included in this repository: "AT09commands.txt".
+Command "AT" should give "OK" reply. Then you can use "AT+HELP" to get list of all commands. There's also a list of commands, for previously linked module, [included in this repository](https://github.com/blaz-r/arduino_AT-09_BT05_CC2541_BLE-module/blob/main/AT09command.txt).
 
 A little example:
+
 ![serial monitor configuration](
 https://github.com/blaz-r/arduino_AT-09_BT05_CC2541_BLE-module/blob/main/serial_monitor.png)
 
